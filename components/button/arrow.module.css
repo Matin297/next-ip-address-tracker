@@ -1,0 +1,11 @@
+.arrowBtn {
+  background-color: var(--color-gray-800);
+  padding: 1rem 1.25rem;
+  border: none;
+  border-top-right-radius: var(--radius-3);
+  border-bottom-right-radius: var(--radius-3);
+}
+
+.arrowBtn:hover {
+  opacity: 0.9;
+}

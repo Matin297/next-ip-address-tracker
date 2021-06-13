@@ -1,9 +1,27 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+html {
+  font-size: 100%;
+}
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  /* COLORS */
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-gray-500: #969696;
+  --color-gray-800: #2b2b2b;
+
+  /* RADIUS */
+  --radius-2: 10px;
+  --radius-3: 15px;
 }
 
 a {
@@ -13,4 +31,39 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input {
+  font-size: 14px;
+}
+
+input::placeholder {
+  font-size: 12px;
+  color: var(--color-gray-500);
+}
+
+@media (min-width: 700px) {
+  input {
+    font-size: inherit;
+  }
+
+  input::placeholder {
+    font-size: 14px;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

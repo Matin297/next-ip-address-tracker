@@ -1,0 +1,1 @@
+export const base_url = 'https://geo.ipify.org/api/v1?apiKey=at_gfQCkC6j8EWIBs3LgmcTjDZ5FlPSs';
