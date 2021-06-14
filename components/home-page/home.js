@@ -22,7 +22,12 @@ export default function Home({ isLoading, state, onSearchHandler }) {
                     className={`${classes.header__form} ${isLoading ? classes.header__disabledForm : ''}`}
                     onSubmit={onSearchHandler}
                 >
-                    <input autoFocus id="input" placeholder="Search for any IP address or domain" />
+                    <input
+                        autoFocus
+                        id="input"
+                        placeholder="Search for any IP address or domain"
+                        aria-label="IP address"
+                    />
                     <ArrowButton />
                 </form>
 
@@ -36,7 +41,6 @@ export default function Home({ isLoading, state, onSearchHandler }) {
             <div className="attribution">
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
                 Coded by <a href="#">Asma Mir</a>.
-
             </div>
         </>
     )
